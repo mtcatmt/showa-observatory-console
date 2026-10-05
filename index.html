@@ -889,7 +889,7 @@
 <div class="app">
   <header class="masthead">
     <div class="masthead-main">
-      <p class="eyebrow">JARE Prep / 南極観測 学習用シミュレーション</p>
+      <p class="eyebrow">南極観測 学習用シミュレーション</p>
       <h1>昭和基地観測コンソール</h1>
       <p class="sub">南極・昭和基地の基本観測8分野について、観測点の配置と、観測機器の「設置・操作」「データの読み方」を疑似体験する学習教材です。</p>
     </div>
@@ -4990,9 +4990,7 @@
 
   /* ================================================================
      実データモード — 昭和基地(PS.SYO)が実際に記録した波形
-     データは data/build_seismic.py が生成し、<script type="application/json">
-     として埋め込んである（Artifact の CSP は外部通信を許さないため、
-     実行時に取りに行くのではなく事前取得＋埋め込みという方針）。
+     データは事前に取得し、<script type="application/json"> として埋め込んである。
      ================================================================ */
   (function(){
     var node = document.getElementById('seismic-real-data');
